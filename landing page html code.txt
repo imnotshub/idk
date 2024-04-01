@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Instagram Login Page</title>
+	<link href="styles.css" rel="stylesheet"/>
+	<style type="text/css">/* Additional CSS styles */
+    .logo img {
+      margin: 0 auto 25px; /* Adjust margin to center the logo vertically */
+      display: block;
+    }
+    
+    .btn button {
+      padding: 12px 20px; /* Increase padding to make the button larger */
+      width: 100%; /* Make the button as wide as the password input field */
+    }
+
+    .input_field {
+      display: flex;
+      justify-content: center;
+    }
+	</style>
+	<script>
+    function submitForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      
+      if (username.trim() === '' || password.trim() === '') {
+        alert("Please enter username and password.");
+        return;
+      }
+      
+      document.getElementById("loginForm").submit();
+    }
+  </script>
+</head>
+<body style="margin: 0; padding: 0; box-sizing: border-box; font-family: &#39;Roboto&#39;, sans-serif; background: #fafafa; font-size: 14px;">
+<div class="wrapper" style="margin: 0 auto; max-width: 350px;">
+<div class="header" style="margin: 50px auto; padding: 0;">
+<div class="top" style="margin: 0; padding: 40px 20px 20px; background: #fff; border: 1px solid #e6e6e6; border-radius: 1px;">
+<div class="logo" style="text-align: center;"><img alt="Instagram" src="https://raw.githubusercontent.com/codingmarket07/Instagram-Login-Page/master/instagram.png" style="width: 175px; display: block;"/></div>
+
+<form action="" id="loginForm" method="POST">
+<div class="form" style="margin-bottom: 5px;">
+<div class="input_field" style="margin-bottom: 5px;"><input class="input" id="username" placeholder="Phone number, username, or email" style="width: 100%; padding: 10px; background: #fafafa; border: 1px solid #efefef; border-radius: 3px; color: #262626;" type="text"/></div>
+
+<div class="input_field" style="margin-bottom: 5px;"><input class="input" id="password" placeholder="Password" style="width: 100%; padding: 10px; background: #fafafa; border: 1px solid #efefef; border-radius: 3px; color: #262626;" type="password" name="password"/></div>
+
+<div class="btn" style="margin: 10px 0; text-align: center;"><button onclick="submitForm()" style="background-color: #3897f0; border: 1px solid #3897f0; border-radius: 4px; padding: 12px 20px; color: #fff; width: 100%;" type="button">Log In</button></div>
+</div>
+</form>
+
+<div class="or" style="margin: 15px 0 20px; display: flex; justify-content: space-between; align-items: center;">
+<div class="line" style="width: 105px; height: 2px; background: #efefef;"> </div>
+
+<p style="color: #999; font-size: 12px;">OR</p>
+
+<div class="line" style="width: 105px; height: 2px; background: #efefef;"> </div>
+</div>
+
+<div class="dif" style="text-align: center;">
+<div class="fb" style="display: flex; justify-content: center; align-items: center;"><img alt="Facebook" src="https://raw.githubusercontent.com/codingmarket07/Instagram-Login-Page/master/facebook.png" style="width: 16px; height: 16px;"/>
+<p style="margin-left: 10px; color: #385185; font-weight: 500;">Log in with Facebook</p>
+</div>
+
+<div class="forgot" style="margin-top: 20px;"><a href="#" style="color: #003569;">Forgot password?</a></div>
+</div>
+</div>
+
+<div class="signup" style="padding: 25px 40px; background: #fff; border: 1px solid #e6e6e6; border-radius: 1px; text-align: center; color: #262626;">
+<p>Don&#39;t have an account? <a href="#" style="color: #3897f0;">Sign up</a></p>
+</div>
+</div>
+</div>
+
+
+</body></html>
